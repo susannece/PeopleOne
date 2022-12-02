@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Company</h1>
+
+<button onclick="getLastPerson('@Url.Action("PersonLastEntered", "Person")')">Last person added with Ajax</button>
+<button onclick="getLastPersonJSON('@Url.Action("PersonLastEnteredJSON", "Person")')">Last person added with JSON</button>
+<button onclick="getPeople('@Url.Action("AjaxPersonList", "Person")')">Last person added with JSON</button>
+
+<div id="result"></div>
